@@ -1,0 +1,6 @@
+version: 2.0
+shards:
+  faker:
+    git: https://github.com/askn/faker.git
+    version: 0.6.0
+

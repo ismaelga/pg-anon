@@ -1,0 +1,17 @@
+name: pg-anon
+version: 0.1.0
+
+authors:
+  - Ismael Abreu <ismg@pm.me>
+
+targets:
+  pg-anon:
+    main: src/cli.cr
+
+dependencies:
+  faker:
+    github: askn/faker
+
+crystal: 1.0.0
+
+license: MIT
