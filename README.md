@@ -6,7 +6,7 @@ Anonymizes
 ## Installation
 
 ```bash
-git clone ???
+git clone https://github.com/ismaelga/pg-anon.git
 cd pg-anon
 shards build --production --release
 ```
@@ -14,7 +14,7 @@ shards build --production --release
 ## Usage
 
 ```bash
-pg-anon -d dump.sql -o anon.sql -f email:email,firstName:first_name
+./bin/pg-anon -d dump.sql -o anon.sql -f email:email,firstName:first_name
 ```
 
 ## Development
