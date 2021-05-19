@@ -14,6 +14,8 @@ module Pg::Anon
       case @type
       when "email"
         Faker::Internet.email
+      when "safe_email"
+        Faker::Internet.safe_email(Faker::Lorem.characters(30))
       when "name"
         Faker::Name.name
       when "encrypted"
@@ -79,13 +81,11 @@ module Pg::Anon
   class Processor
     property file : String
     property output : String
-    property tables : String
     property fields : String
 
     def initialize
       @file = "./in.sql"
       @output = "./out.sql"
-      @tables = ""
       @fields = ""
     end
 

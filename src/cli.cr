@@ -12,7 +12,6 @@ OptionParser.parse do |parser|
   end
   parser.on("-d FILE", "--dump FILE", "File path") { |file| processor.file = file }
   parser.on("-o OUPUT", "--output OUTPUT", "") { |output| processor.output = output || "./out.sql" }
-  parser.on("-t TABLES", "--tables TABLES", "") { |tables| processor.tables = tables || "" }
   parser.on("-f FIELDS", "--fields FIELDS", "") { |fields| processor.fields = fields || "" }
   parser.invalid_option { }
 end
