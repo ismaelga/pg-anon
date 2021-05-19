@@ -97,12 +97,14 @@ module Pg::Anon
         }
       end
 
+      puts "Running..."
       iterator = Iterator.new(mappings)
       File.open(@output, "w") do |writer|
         File.each_line(@file) do |line|
           writer.puts iterator.process_line(line)
         end
       end
+      puts "Done"
     end
   end
 end
