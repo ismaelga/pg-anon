@@ -1,7 +1,7 @@
 # pg-anon
 
 Inspired by https://github.com/rap2hpoutre/pg-anonymizer but way faster.
-Anonymizes
+Anonymizes your Postgresql dumpfile
 
 ## Installation
 
